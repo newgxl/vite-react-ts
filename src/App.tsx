@@ -1,18 +1,19 @@
 import { Button } from "antd"
 
-function text() {
-  console.log("hello world")
-}
+import { memo } from "react"
+// function App() {
+//   return (
+//     <>
+//       {/* <h1>hello world</h1> */}
+//       <Button type="primary">Button</Button>
+//     </>
+//   )
+// }
 
-text()
-
-function App() {
+export default memo(function App() {
   return (
     <>
-      <h1>hello world</h1>
       <Button type="primary">Button</Button>
     </>
   )
-}
-
-export default App
+})
